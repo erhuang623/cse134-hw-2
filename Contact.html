@@ -23,15 +23,44 @@
 <hr></hr>
 <body>
 
+    <section id="myInfo">
     <h2>My Info</h2>
+    <section>
+    
+
+
+
 
     <section id="contactMe">
     <form>
         <fieldset>
             <legend>Contact Me!</legend>
             <label>Your email:</label>
-            <input type="email">
+            <input type="email"> <br>
 
+            <label for="occupation">Select which best describes you:</label>
+            <select id="occupation">
+                <optgroup label="Education">
+                    <option value="highSchool">High School</option>
+                    <option value="undergrad">Undergraduate</option>
+                    <option value="college">Graduate</option>
+                </optgroup>
+            </select> <br>
+
+
+                <label for="workExperience">Select your work experience</label>
+                <datalist id="experience">
+                        <option value="Entry"></option>
+                        <option value="Intermediate"></option>
+                        <option value="Employer"></option>
+                </datalist>
+                <input list="experience" id="workExperience">
+            
+            <br>
+
+            <label id="Inquiries">Any Questions?</label>    
+            <textarea id="Inquiries">Your Question</textarea>
+            <button type="submit">submit</button> 
         </fieldset>
     </form>
     </section>

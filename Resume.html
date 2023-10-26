@@ -13,6 +13,8 @@
     <title>CSE 134B HW 2 Portfolio Website</title>
 </head>
 
+<body>
+
 <h1>Resume</h1> 
 <nav>
     <a href="index.html"><button type="Navigate">About</button></a>
@@ -20,21 +22,26 @@
     <a href="Contact.html"><button type="Navigate">Contact</button></a>
 </nav>
 
-<hr></hr>
+<hr>
 
 <section id="currentDescription">
-    <h2>Current Description</h2>
-    <body>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in nulla. 
-        Sed odio morbi quis commodo odio aenean. Sed turpis tincidunt id aliquet risus feugiat in ante. Elit ut aliquam purus sit amet luctus venenatis lectus magna. 
-        Adipiscing bibendum est ultricies integer quis. Vulputate eu scelerisque felis imperdiet proin fermentum. 
-        Fermentum leo vel orci porta non pulvinar neque. Tortor consequat id porta nibh venenatis cras sed. Massa tempor nec feugiat nisl pretium fusce id velit ut. 
-        Turpis massa tincidunt dui ut ornare. Sit amet luctus venenatis lectus magna. Etiam tempor orci eu lobortis elementum nibh tellus. 
-        Fermentum iaculis eu non diam phasellus. 
-        Velit euismod in pellentesque massa placerat duis ultricies lacus. 
-        Ipsum a arcu cursus vitae congue mauris rhoncus. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. 
-        Pellentesque sit amet porttitor eget. Praesent semper feugiat nibh sed pulvinar proin gravida. Eget magna fermentum iaculis eu non diam.
-    </body>
+    <h2>Current Work Description</h2>
+    
+        <details>
+            <summary>About my Projects</summary>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend mi in nulla. 
+            Sed odio morbi quis commodo odio aenean. Sed turpis tincidunt id aliquet risus feugiat in ante. Elit ut aliquam purus sit amet luctus venenatis lectus magna. 
+            Adipiscing bibendum est ultricies integer quis. Vulputate eu scelerisque felis imperdiet proin fermentum. 
+            Fermentum leo vel orci porta non pulvinar neque. Tortor consequat id porta nibh venenatis cras sed. Massa tempor nec feugiat nisl pretium fusce id velit ut. 
+            Turpis massa tincidunt dui ut ornare. Sit amet luctus venenatis lectus magna. Etiam tempor orci eu lobortis elementum nibh tellus. 
+            Fermentum iaculis eu non diam phasellus. 
+            Velit euismod in pellentesque massa placerat duis ultricies lacus. 
+            Ipsum a arcu cursus vitae congue mauris rhoncus. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. 
+            Pellentesque sit amet porttitor eget. Praesent semper feugiat nibh sed pulvinar proin gravida. Eget magna fermentum iaculis eu non diam.
+            
+        </details>
+
+   
 </section>
 
 <section id="pastExperiences">
@@ -44,10 +51,14 @@
             <li>Company Y from 10/25/2021 - XX/XX/XX</li>
             <li>Company Z from 10/25/2021 - XX/XX/XX</li>
         </ol>
+        <iframe src="https://ucsd.edu/" title="UCSanDiego"></iframe>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+    <h2>Projects<svg width="100" height="50">
+        <circle cx="50" cy="50" r="20" stroke="Blue" stroke-width="4" fill="red" />
+      </svg></h2>
+      
         <figure>
             <video width="200" height="200" controls>
                 <source src="Videos/Boxes.mp4" type="video/mp4" />
@@ -56,14 +67,38 @@
         </figure>
 
 
-        <h1>Project 1</h1>
+        <h3>Project 1</h3>
             <img src="/Images/sample.jpg" alt="image of ideas coming out of head" width="200" height="200">
         
-        <h1>Project 2</h1>
-            <img src="/Images/sample.jpg" alt="image of ideas coming out of head" width="200" height="200">
+        <h3>Project 2</h3>
+            <pre>A graph project using <code>vectors</code> and a few algorithms like <code>DFS,BFS, Djikstra's, 
+and Bellman-Ford</code>
+            </pre>
+
+        <h3>Project 3</h3>
+            <canvas id="project" width="200" height="200" style="border:1px solid gray;">
+                <script>
+                    let canvas = document.getElementById("project");
+                    let ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(50, 50, 100, 100);
+                </script>
+            </canvas>
+
+        <h3>Project 4</h3>
+        <picture>
+            <source srcset="/Images/project image.png" width="10%">
+            <source srcset="/Images/project image.png" width="10%">
+            <img src="/Images/project image.png" alt="Placeholder image for project" width="20%">
+        </picture>
+
+        <h3>Project 5</h3>
+
+        <template>
+            In case I want to put projects here later
+        </template>
         
-        <h1>Project 3</h1>
-            <iframe src="https://ucsd.edu/" title="UCSanDiego">
-</section>
+    </section>
+</body>
 
 </html>
